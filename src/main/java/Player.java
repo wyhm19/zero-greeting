@@ -13,7 +13,7 @@ public class Player {
     }
 
     public void update(int horizontal, int vertical, double seconds,
-                       double canvasWidth, double canvasHeight) {
+        double canvasWidth, double canvasHeight) {
         x += horizontal * speed * seconds;
         y += vertical * speed * seconds;
         x = Math.max(0, Math.min(x, canvasWidth - size));
